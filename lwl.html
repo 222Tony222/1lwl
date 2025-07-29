@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lonely World Lean — LWL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    nav {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      border-bottom: 2px solid #fff;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: left;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      border: none;
+      font-size: 16px;
+      background: #fff;
+      color: #000;
+    }
+
+    button {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #fff;
+    }
+
+    a:hover, button:hover {
+      background: #fff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h1>Lonely World Lean (LWL)</h1>
+    <h2>FOR EVERYONE</h2>
+    <p>Minimal. Bold. Designed by us — for you.</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>LWL is a fashion brand creating clean, bold designs for anyone who dares to be original. Every piece is designed in-house with intention and individuality.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x400?text=Product+1" alt="Product 1">
+      <img src="https://via.placeholder.com/300x400?text=Product+2" alt="Product 2">
+      <img src="https://via.placeholder.com/300x400?text=Product+3" alt="Product 3">
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>Order</h2>
+    <p>Fill out the form below. You'll receive confirmation by email.</p>
+
+    <!-- Formspree example (you can also use Google Forms instead) -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="address" placeholder="Delivery Address" required>
+      <input type="text" name="products" placeholder="What are you ordering?" required>
+      <input type="text" name="bank_info" placeholder="Your Bank Info (optional)">
+      <input type="email" name="email" placeholder="Your Email" required>
+      <button type="submit">Submit Order</button>
+    </form>
+
+    <p style="margin-top:20px;font-size:14px;">Note: We will never share your information.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Questions? Reach us at: <strong>lwlwear@example.com</strong></p>
+    <p>Follow us on Instagram: <strong>@lwlwear</strong></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Lonely World Lean — LWL. All rights reserved.
+  </footer>
+
+</body>
+</html>

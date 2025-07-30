@@ -19,6 +19,7 @@
       position: sticky;
       top: 0;
       border-bottom: 2px solid #fff;
+      z-index: 1000;
     }
 
     nav a {
@@ -27,6 +28,10 @@
       text-decoration: none;
       font-weight: bold;
       letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     section {
@@ -41,43 +46,29 @@
       text-transform: uppercase;
     }
 
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
     .gallery img {
       width: 100%;
       max-width: 300px;
-      margin: 10px;
+      border: 2px solid #fff;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      text-align: left;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    input, textarea, button {
-      padding: 10px;
+    iframe {
+      width: 100%;
       border: none;
-      font-size: 16px;
-      background: #fff;
-      color: #000;
-    }
-
-    button {
-      cursor: pointer;
-      font-weight: bold;
     }
 
     footer {
       text-align: center;
       padding: 30px;
       border-top: 1px solid #fff;
-    }
-
-    a:hover, button:hover {
-      background: #fff;
-      color: #000;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -115,17 +106,16 @@
     <h2>Order</h2>
     <p>Fill out the form below. You'll receive confirmation by email.</p>
 
-    <!-- Formspree example (you can also use Google Forms instead) -->
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="text" name="address" placeholder="Delivery Address" required>
-      <input type="text" name="products" placeholder="What are you ordering?" required>
-      <input type="text" name="bank_info" placeholder="Your Bank Info" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <button type="submit">Submit Order</button>
-    </form>
-
-    <p style="margin-top:20px;font-size:14px;">Note: We will never share your information.</p>
+    <!-- 📌 Replace this URL with your actual Google Form embed URL -->
+    <iframe 
+     src="https://docs.google.com/forms/d/e/1FAIpQLSew1T4Uv9Ol9QTcELsc0ySEd4fEscLs7agyu0BrptzWgAlssA/viewform?embedded=true" 
+     width="100%" 
+     height="991" 
+     frameborder="0" 
+     marginheight="0" 
+     marginwidth="0">
+     Loading…
+    </iframe>
   </section>
 
   <section id="contact">
